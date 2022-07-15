@@ -1,0 +1,1813 @@
+INFO:2022-07-15 00:43:29,657:Started server process [53904]
+INFO:2022-07-15 00:43:29,658:Waiting for application startup.
+INFO:2022-07-15 00:43:29,659:Application startup complete.
+INFO:2022-07-15 00:43:49,907:Started server process [50736]
+INFO:2022-07-15 00:43:49,908:Waiting for application startup.
+INFO:2022-07-15 00:43:49,908:Application startup complete.
+INFO:2022-07-15 00:44:03,344:Started server process [54224]
+INFO:2022-07-15 00:44:03,345:Waiting for application startup.
+INFO:2022-07-15 00:44:03,346:Application startup complete.
+INFO:2022-07-15 00:44:07,073:Started server process [53640]
+INFO:2022-07-15 00:44:07,074:Waiting for application startup.
+INFO:2022-07-15 00:44:07,075:Application startup complete.
+INFO:2022-07-15 00:44:21,536:Started server process [15580]
+INFO:2022-07-15 00:44:21,537:Waiting for application startup.
+INFO:2022-07-15 00:44:21,538:Application startup complete.
+INFO:2022-07-15 00:44:25,449:Started server process [43164]
+INFO:2022-07-15 00:44:25,450:Waiting for application startup.
+INFO:2022-07-15 00:44:25,450:Application startup complete.
+INFO:2022-07-15 00:44:36,208:Started server process [53864]
+INFO:2022-07-15 00:44:36,208:Waiting for application startup.
+INFO:2022-07-15 00:44:36,211:Application startup complete.
+INFO:2022-07-15 00:44:53,932:Started server process [53360]
+INFO:2022-07-15 00:44:53,932:Waiting for application startup.
+INFO:2022-07-15 00:44:53,933:Application startup complete.
+INFO:2022-07-15 00:44:59,221:Started server process [53832]
+INFO:2022-07-15 00:44:59,223:Waiting for application startup.
+INFO:2022-07-15 00:44:59,225:Application startup complete.
+INFO:2022-07-15 00:46:13,219:Connecting to database...
+INFO:2022-07-15 00:46:13,235:Connecting to database...
+INFO:2022-07-15 00:46:13,254:Commiting to database...
+INFO:2022-07-15 00:46:13,288:Connecting to database...
+INFO:2022-07-15 12:12:58,850:Started server process [51388]
+INFO:2022-07-15 12:12:58,855:Waiting for application startup.
+INFO:2022-07-15 12:12:58,858:Application startup complete.
+ERROR:2022-07-15 12:13:58,556:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    ip_range = cidr_to_range(cidr)
+  File ".\cidr_manipulator.py", line 37, in cidr_to_range
+    str(ipaddress.ip_network(cidr)[0]) + "-" + str(ipaddress.ip_network(cidr)[-1])
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 83, in ip_network
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 network' %
+ValueError: '1' does not appear to be an IPv4 or IPv6 network
+ERROR:2022-07-15 12:14:15,957:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    ip_range = cidr_to_range(cidr)
+  File ".\cidr_manipulator.py", line 37, in cidr_to_range
+    str(ipaddress.ip_network(cidr)[0]) + "-" + str(ipaddress.ip_network(cidr)[-1])
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 83, in ip_network
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 network' %
+ValueError: "'" does not appear to be an IPv4 or IPv6 network
+INFO:2022-07-15 12:14:52,148:Started server process [55948]
+INFO:2022-07-15 12:14:52,149:Waiting for application startup.
+INFO:2022-07-15 12:14:52,149:Application startup complete.
+ERROR:2022-07-15 12:14:54,677:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    ip_range = cidr_to_range([cidr])
+  File ".\cidr_manipulator.py", line 37, in cidr_to_range
+    str(ipaddress.ip_network(cidr)[0]) + "-" + str(ipaddress.ip_network(cidr)[-1])
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 83, in ip_network
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 network' %
+ValueError: "'10.0.1.0/24'" does not appear to be an IPv4 or IPv6 network
+INFO:2022-07-15 12:14:58,013:Started server process [56008]
+INFO:2022-07-15 12:14:58,014:Waiting for application startup.
+INFO:2022-07-15 12:14:58,014:Application startup complete.
+INFO:2022-07-15 12:16:01,647:Started server process [55388]
+INFO:2022-07-15 12:16:01,647:Waiting for application startup.
+INFO:2022-07-15 12:16:01,648:Application startup complete.
+INFO:2022-07-15 12:16:28,687:Started server process [33476]
+INFO:2022-07-15 12:16:28,703:Waiting for application startup.
+INFO:2022-07-15 12:16:28,704:Application startup complete.
+INFO:2022-07-15 12:17:31,553:Started server process [54428]
+INFO:2022-07-15 12:17:31,554:Waiting for application startup.
+INFO:2022-07-15 12:17:31,554:Application startup complete.
+INFO:2022-07-15 12:17:33,881:Started server process [56180]
+INFO:2022-07-15 12:17:33,882:Waiting for application startup.
+INFO:2022-07-15 12:17:33,882:Application startup complete.
+INFO:2022-07-15 12:17:34,490:Connecting to database...
+ERROR:2022-07-15 12:17:34,522:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 42, in next_available_range
+    available_cidr = sub_cidr(cidr, get_cidr_list())
+  File ".\cidr_manipulator.py", line 31, in sub_cidr
+    print(nets[0])
+IndexError: list index out of range
+INFO:2022-07-15 12:17:43,116:Started server process [55940]
+INFO:2022-07-15 12:17:43,117:Waiting for application startup.
+INFO:2022-07-15 12:17:43,117:Application startup complete.
+INFO:2022-07-15 12:17:50,453:Connecting to database...
+ERROR:2022-07-15 12:17:50,460:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 42, in next_available_range
+    available_cidr = sub_cidr(cidr, get_cidr_list())
+  File ".\cidr_manipulator.py", line 31, in sub_cidr
+    print(nets[0])
+IndexError: list index out of range
+INFO:2022-07-15 12:18:20,963:Started server process [46100]
+INFO:2022-07-15 12:18:20,964:Waiting for application startup.
+INFO:2022-07-15 12:18:20,965:Application startup complete.
+INFO:2022-07-15 12:18:25,324:Connecting to database...
+ERROR:2022-07-15 12:18:25,332:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 42, in next_available_range
+    available_cidr = sub_cidr(cidr, get_cidr_list())
+  File ".\cidr_manipulator.py", line 31, in sub_cidr
+    print(nets[0])
+IndexError: list index out of range
+INFO:2022-07-15 12:19:03,100:Started server process [49864]
+INFO:2022-07-15 12:19:03,101:Waiting for application startup.
+INFO:2022-07-15 12:19:03,102:Application startup complete.
+INFO:2022-07-15 12:19:05,195:Started server process [55328]
+INFO:2022-07-15 12:19:05,196:Waiting for application startup.
+INFO:2022-07-15 12:19:05,197:Application startup complete.
+INFO:2022-07-15 12:19:09,497:Started server process [54348]
+INFO:2022-07-15 12:19:09,498:Waiting for application startup.
+INFO:2022-07-15 12:19:09,498:Application startup complete.
+INFO:2022-07-15 12:19:11,219:Started server process [55788]
+INFO:2022-07-15 12:19:11,221:Waiting for application startup.
+INFO:2022-07-15 12:19:11,221:Application startup complete.
+INFO:2022-07-15 12:19:16,546:Connecting to database...
+INFO:2022-07-15 12:19:16,567:Connecting to database...
+INFO:2022-07-15 12:19:16,578:Commiting to database...
+ERROR:2022-07-15 12:19:16,580:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 44, in next_available_range
+    return cidr_to_range([available_cidr])
+  File ".\cidr_manipulator.py", line 37, in cidr_to_range
+    str(ipaddress.ip_network(cidr)[0]) + "-" + str(ipaddress.ip_network(cidr)[-1])
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 83, in ip_network
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 network' %
+ValueError: 'x' does not appear to be an IPv4 or IPv6 network
+INFO:2022-07-15 12:19:34,115:Started server process [55216]
+INFO:2022-07-15 12:19:34,116:Waiting for application startup.
+INFO:2022-07-15 12:19:34,117:Application startup complete.
+INFO:2022-07-15 12:19:42,825:Started server process [51784]
+INFO:2022-07-15 12:19:42,825:Waiting for application startup.
+INFO:2022-07-15 12:19:42,826:Application startup complete.
+INFO:2022-07-15 12:20:12,309:Started server process [55732]
+INFO:2022-07-15 12:20:12,310:Waiting for application startup.
+INFO:2022-07-15 12:20:12,311:Application startup complete.
+INFO:2022-07-15 12:20:13,777:Started server process [56168]
+INFO:2022-07-15 12:20:13,778:Waiting for application startup.
+INFO:2022-07-15 12:20:13,778:Application startup complete.
+ERROR:2022-07-15 12:20:13,972:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 42, in next_available_range
+    available_cidr = sub_cidr(cidr)
+TypeError: sub_cidr() missing 1 required positional argument: 'cidr_blocks'
+INFO:2022-07-15 12:20:17,039:Started server process [49376]
+INFO:2022-07-15 12:20:17,040:Waiting for application startup.
+INFO:2022-07-15 12:20:17,040:Application startup complete.
+INFO:2022-07-15 12:20:21,195:Started server process [54744]
+INFO:2022-07-15 12:20:21,196:Waiting for application startup.
+INFO:2022-07-15 12:20:21,196:Application startup complete.
+INFO:2022-07-15 12:20:23,185:Connecting to database...
+INFO:2022-07-15 12:20:23,225:Connecting to database...
+INFO:2022-07-15 12:20:23,239:Commiting to database...
+INFO:2022-07-15 12:20:23,258:Connecting to database...
+INFO:2022-07-15 12:20:35,972:Started server process [39716]
+INFO:2022-07-15 12:20:35,972:Waiting for application startup.
+INFO:2022-07-15 12:20:35,973:Application startup complete.
+INFO:2022-07-15 12:21:07,394:Started server process [50028]
+INFO:2022-07-15 12:21:07,395:Waiting for application startup.
+INFO:2022-07-15 12:21:07,395:Application startup complete.
+INFO:2022-07-15 12:21:12,220:Started server process [52692]
+INFO:2022-07-15 12:21:12,221:Waiting for application startup.
+INFO:2022-07-15 12:21:12,221:Application startup complete.
+INFO:2022-07-15 12:21:13,430:Started server process [44280]
+INFO:2022-07-15 12:21:13,431:Waiting for application startup.
+INFO:2022-07-15 12:21:13,432:Application startup complete.
+INFO:2022-07-15 12:21:14,516:Started server process [37464]
+INFO:2022-07-15 12:21:14,516:Waiting for application startup.
+INFO:2022-07-15 12:21:14,517:Application startup complete.
+INFO:2022-07-15 12:21:25,072:Connecting to database...
+ERROR:2022-07-15 12:21:25,096:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 42, in next_available_range
+    available_cidr = sub_cidr(cidr, get_cidr_list())
+  File ".\cidr_manipulator.py", line 31, in sub_cidr
+    return nets[0]
+IndexError: list index out of range
+INFO:2022-07-15 12:22:02,021:Started server process [54184]
+INFO:2022-07-15 12:22:02,021:Waiting for application startup.
+INFO:2022-07-15 12:22:02,022:Application startup complete.
+INFO:2022-07-15 12:22:15,772:Connecting to database...
+ERROR:2022-07-15 12:22:15,806:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 42, in next_available_range
+    available_cidr = sub_cidr(cidr, get_cidr_list())
+  File ".\cidr_manipulator.py", line 31, in sub_cidr
+    return nets[0]
+IndexError: list index out of range
+INFO:2022-07-15 12:22:39,278:Started server process [50756]
+INFO:2022-07-15 12:22:39,279:Waiting for application startup.
+INFO:2022-07-15 12:22:39,279:Application startup complete.
+INFO:2022-07-15 12:22:41,299:Connecting to database...
+ERROR:2022-07-15 12:22:41,308:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 43, in next_available_range
+    available_cidr = sub_cidr(cidr, get_cidr_list())
+  File ".\cidr_manipulator.py", line 32, in sub_cidr
+    return nets[0]
+IndexError: list index out of range
+INFO:2022-07-15 12:23:06,297:Started server process [50216]
+INFO:2022-07-15 12:23:06,298:Waiting for application startup.
+INFO:2022-07-15 12:23:06,298:Application startup complete.
+INFO:2022-07-15 12:23:07,854:Started server process [56252]
+INFO:2022-07-15 12:23:07,854:Waiting for application startup.
+INFO:2022-07-15 12:23:07,855:Application startup complete.
+INFO:2022-07-15 12:23:09,836:Started server process [51900]
+INFO:2022-07-15 12:23:09,837:Waiting for application startup.
+INFO:2022-07-15 12:23:09,839:Application startup complete.
+INFO:2022-07-15 12:23:17,736:Started server process [53496]
+INFO:2022-07-15 12:23:17,736:Waiting for application startup.
+INFO:2022-07-15 12:23:17,737:Application startup complete.
+INFO:2022-07-15 12:24:11,224:Started server process [43584]
+INFO:2022-07-15 12:24:11,225:Waiting for application startup.
+INFO:2022-07-15 12:24:11,225:Application startup complete.
+INFO:2022-07-15 12:24:24,502:Started server process [55604]
+INFO:2022-07-15 12:24:24,503:Waiting for application startup.
+INFO:2022-07-15 12:24:24,504:Application startup complete.
+INFO:2022-07-15 12:24:25,239:Started server process [47896]
+INFO:2022-07-15 12:24:25,240:Waiting for application startup.
+INFO:2022-07-15 12:24:25,241:Application startup complete.
+INFO:2022-07-15 12:24:31,273:Started server process [55324]
+INFO:2022-07-15 12:24:31,273:Waiting for application startup.
+INFO:2022-07-15 12:24:31,274:Application startup complete.
+INFO:2022-07-15 12:24:41,238:Started server process [43452]
+INFO:2022-07-15 12:24:41,249:Waiting for application startup.
+INFO:2022-07-15 12:24:41,250:Application startup complete.
+INFO:2022-07-15 12:24:51,641:Started server process [56276]
+INFO:2022-07-15 12:24:51,642:Waiting for application startup.
+INFO:2022-07-15 12:24:51,642:Application startup complete.
+INFO:2022-07-15 12:24:55,752:Started server process [51044]
+INFO:2022-07-15 12:24:55,752:Waiting for application startup.
+INFO:2022-07-15 12:24:55,753:Application startup complete.
+INFO:2022-07-15 12:25:03,799:Connecting to database...
+INFO:2022-07-15 12:25:03,837:Connecting to database...
+INFO:2022-07-15 12:25:03,861:Connecting to database...
+INFO:2022-07-15 12:25:03,874:Commiting to database...
+ERROR:2022-07-15 12:25:03,875:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 46, in next_available_range
+    return cidr_to_range([available_cidr])
+  File ".\cidr_manipulator.py", line 39, in cidr_to_range
+    str(ipaddress.ip_network(cidr)[0]) + "-" + str(ipaddress.ip_network(cidr)[-1])
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 83, in ip_network
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 network' %
+ValueError: ['10.0.1.0/24'] does not appear to be an IPv4 or IPv6 network
+INFO:2022-07-15 12:25:48,114:Started server process [55272]
+INFO:2022-07-15 12:25:48,115:Waiting for application startup.
+INFO:2022-07-15 12:25:48,115:Application startup complete.
+INFO:2022-07-15 12:25:50,256:Connecting to database...
+ERROR:2022-07-15 12:25:50,263:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 45, in next_available_range
+    available_cidr = sub_cidr(cidr, get_cidr_list())
+  File ".\cidr_manipulator.py", line 33, in sub_cidr
+    return nets[0]
+IndexError: list index out of range
+INFO:2022-07-15 12:25:55,472:Started server process [56300]
+INFO:2022-07-15 12:25:55,473:Waiting for application startup.
+INFO:2022-07-15 12:25:55,473:Application startup complete.
+INFO:2022-07-15 12:26:01,807:Connecting to database...
+ERROR:2022-07-15 12:26:01,815:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 45, in next_available_range
+    available_cidr = sub_cidr(cidr, get_cidr_list())
+  File ".\cidr_manipulator.py", line 33, in sub_cidr
+    return nets[0]
+IndexError: list index out of range
+INFO:2022-07-15 12:26:08,740:Connecting to database...
+INFO:2022-07-15 12:26:08,784:Connecting to database...
+INFO:2022-07-15 12:26:08,805:Connecting to database...
+INFO:2022-07-15 12:26:08,817:Commiting to database...
+ERROR:2022-07-15 12:26:08,821:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 47, in next_available_range
+    return cidr_to_range([available_cidr])
+  File ".\cidr_manipulator.py", line 40, in cidr_to_range
+    str(ipaddress.ip_network(cidr)[0]) + "-" + str(ipaddress.ip_network(cidr)[-1])
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 83, in ip_network
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 network' %
+ValueError: ['10.0.1.0/24'] does not appear to be an IPv4 or IPv6 network
+INFO:2022-07-15 12:26:24,089:Connecting to database...
+ERROR:2022-07-15 12:26:24,097:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 45, in next_available_range
+    available_cidr = sub_cidr(cidr, get_cidr_list())
+  File ".\cidr_manipulator.py", line 33, in sub_cidr
+    return nets[0]
+IndexError: list index out of range
+INFO:2022-07-15 12:27:02,413:Started server process [54808]
+INFO:2022-07-15 12:27:02,413:Waiting for application startup.
+INFO:2022-07-15 12:27:02,414:Application startup complete.
+INFO:2022-07-15 12:27:14,406:Started server process [56156]
+INFO:2022-07-15 12:27:14,407:Waiting for application startup.
+INFO:2022-07-15 12:27:14,407:Application startup complete.
+INFO:2022-07-15 12:27:25,644:Started server process [52560]
+INFO:2022-07-15 12:27:25,644:Waiting for application startup.
+INFO:2022-07-15 12:27:25,645:Application startup complete.
+INFO:2022-07-15 12:27:51,678:Started server process [44376]
+INFO:2022-07-15 12:27:51,679:Waiting for application startup.
+INFO:2022-07-15 12:27:51,680:Application startup complete.
+INFO:2022-07-15 12:27:53,719:Started server process [49972]
+INFO:2022-07-15 12:27:53,720:Waiting for application startup.
+INFO:2022-07-15 12:27:53,720:Application startup complete.
+INFO:2022-07-15 12:27:54,978:Started server process [56152]
+INFO:2022-07-15 12:27:54,979:Waiting for application startup.
+INFO:2022-07-15 12:27:54,979:Application startup complete.
+INFO:2022-07-15 12:27:56,279:Connecting to database...
+INFO:2022-07-15 12:27:56,301:Connecting to database...
+INFO:2022-07-15 12:27:56,319:Connecting to database...
+ERROR:2022-07-15 12:27:56,324:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 52, in next_available_range
+    return cidr_to_range([available_cidr])
+  File ".\cidr_manipulator.py", line 45, in cidr_to_range
+    str(ipaddress.ip_network(cidr)[0]) + "-" + str(ipaddress.ip_network(cidr)[-1])
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 83, in ip_network
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 network' %
+ValueError: 'None' does not appear to be an IPv4 or IPv6 network
+INFO:2022-07-15 12:28:36,893:Started server process [55048]
+INFO:2022-07-15 12:28:36,894:Waiting for application startup.
+INFO:2022-07-15 12:28:36,895:Application startup complete.
+INFO:2022-07-15 12:28:40,644:Started server process [41456]
+INFO:2022-07-15 12:28:40,645:Waiting for application startup.
+INFO:2022-07-15 12:28:40,645:Application startup complete.
+INFO:2022-07-15 12:28:40,770:Connecting to database...
+INFO:2022-07-15 12:28:40,793:Connecting to database...
+INFO:2022-07-15 12:28:40,812:Connecting to database...
+ERROR:2022-07-15 12:28:40,820:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 53, in next_available_range
+    return cidr_to_range([available_cidr])
+  File ".\cidr_manipulator.py", line 46, in cidr_to_range
+    str(ipaddress.ip_network(cidr)[0]) + "-" + str(ipaddress.ip_network(cidr)[-1])
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 83, in ip_network
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 network' %
+ValueError: 'None' does not appear to be an IPv4 or IPv6 network
+INFO:2022-07-15 12:28:56,050:Started server process [50568]
+INFO:2022-07-15 12:28:56,051:Waiting for application startup.
+INFO:2022-07-15 12:28:56,052:Application startup complete.
+INFO:2022-07-15 12:29:13,474:Started server process [55340]
+INFO:2022-07-15 12:29:13,475:Waiting for application startup.
+INFO:2022-07-15 12:29:13,475:Application startup complete.
+INFO:2022-07-15 12:29:20,371:Started server process [14716]
+INFO:2022-07-15 12:29:20,372:Waiting for application startup.
+INFO:2022-07-15 12:29:20,372:Application startup complete.
+INFO:2022-07-15 12:29:23,917:Connecting to database...
+INFO:2022-07-15 12:29:23,938:Connecting to database...
+INFO:2022-07-15 12:29:23,979:Connecting to database...
+ERROR:2022-07-15 12:29:23,987:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 54, in next_available_range
+    return cidr_to_range([available_cidr])
+  File ".\cidr_manipulator.py", line 47, in cidr_to_range
+    str(ipaddress.ip_network(cidr)[0]) + "-" + str(ipaddress.ip_network(cidr)[-1])
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 83, in ip_network
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 network' %
+ValueError: 'None' does not appear to be an IPv4 or IPv6 network
+INFO:2022-07-15 12:29:33,653:Started server process [38296]
+INFO:2022-07-15 12:29:33,654:Waiting for application startup.
+INFO:2022-07-15 12:29:33,654:Application startup complete.
+INFO:2022-07-15 12:29:34,760:Connecting to database...
+INFO:2022-07-15 12:29:34,822:Connecting to database...
+INFO:2022-07-15 12:29:34,911:Connecting to database...
+ERROR:2022-07-15 12:29:34,921:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 54, in next_available_range
+    return cidr_to_range([available_cidr])
+  File ".\cidr_manipulator.py", line 47, in cidr_to_range
+    str(ipaddress.ip_network(cidr)[0]) + "-" + str(ipaddress.ip_network(cidr)[-1])
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 83, in ip_network
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 network' %
+ValueError: 'None' does not appear to be an IPv4 or IPv6 network
+INFO:2022-07-15 12:30:11,276:Started server process [55740]
+INFO:2022-07-15 12:30:11,277:Waiting for application startup.
+INFO:2022-07-15 12:30:11,277:Application startup complete.
+INFO:2022-07-15 12:30:15,165:Started server process [52464]
+INFO:2022-07-15 12:30:15,165:Waiting for application startup.
+INFO:2022-07-15 12:30:15,166:Application startup complete.
+INFO:2022-07-15 12:30:19,797:Connecting to database...
+INFO:2022-07-15 12:30:19,816:Connecting to database...
+INFO:2022-07-15 12:30:19,842:Connecting to database...
+INFO:2022-07-15 12:30:19,852:Commiting to database...
+INFO:2022-07-15 12:31:18,744:Started server process [51800]
+INFO:2022-07-15 12:31:18,745:Waiting for application startup.
+INFO:2022-07-15 12:31:18,746:Application startup complete.
+INFO:2022-07-15 12:31:20,628:Connecting to database...
+INFO:2022-07-15 12:31:20,648:Connecting to database...
+INFO:2022-07-15 12:31:20,665:Connecting to database...
+INFO:2022-07-15 12:31:52,570:Started server process [54432]
+INFO:2022-07-15 12:31:52,570:Waiting for application startup.
+INFO:2022-07-15 12:31:52,571:Application startup complete.
+INFO:2022-07-15 12:31:53,358:Connecting to database...
+INFO:2022-07-15 12:31:53,378:Connecting to database...
+INFO:2022-07-15 12:31:53,396:Connecting to database...
+INFO:2022-07-15 12:32:06,828:Connecting to database...
+INFO:2022-07-15 12:32:06,886:Connecting to database...
+INFO:2022-07-15 12:32:06,905:Connecting to database...
+INFO:2022-07-15 12:32:06,917:Commiting to database...
+INFO:2022-07-15 12:32:20,209:Started server process [54736]
+INFO:2022-07-15 12:32:20,210:Waiting for application startup.
+INFO:2022-07-15 12:32:20,210:Application startup complete.
+INFO:2022-07-15 12:32:21,148:Connecting to database...
+INFO:2022-07-15 12:32:21,168:Connecting to database...
+INFO:2022-07-15 12:32:21,204:Connecting to database...
+INFO:2022-07-15 12:32:33,449:Started server process [51576]
+INFO:2022-07-15 12:32:33,450:Waiting for application startup.
+INFO:2022-07-15 12:32:33,450:Application startup complete.
+INFO:2022-07-15 12:32:34,851:Started server process [55720]
+INFO:2022-07-15 12:32:34,852:Waiting for application startup.
+INFO:2022-07-15 12:32:34,852:Application startup complete.
+INFO:2022-07-15 12:32:37,474:Started server process [54636]
+INFO:2022-07-15 12:32:37,474:Waiting for application startup.
+INFO:2022-07-15 12:32:37,475:Application startup complete.
+INFO:2022-07-15 12:32:39,270:Started server process [56264]
+INFO:2022-07-15 12:32:39,271:Waiting for application startup.
+INFO:2022-07-15 12:32:39,271:Application startup complete.
+INFO:2022-07-15 12:32:43,392:Started server process [56072]
+INFO:2022-07-15 12:32:43,393:Waiting for application startup.
+INFO:2022-07-15 12:32:43,393:Application startup complete.
+INFO:2022-07-15 12:32:47,646:Connecting to database...
+INFO:2022-07-15 12:32:47,696:Connecting to database...
+INFO:2022-07-15 12:32:47,716:Connecting to database...
+INFO:2022-07-15 12:32:47,736:Commiting to database...
+INFO:2022-07-15 12:32:50,566:Connecting to database...
+INFO:2022-07-15 12:32:50,589:Connecting to database...
+INFO:2022-07-15 12:32:50,629:Connecting to database...
+INFO:2022-07-15 12:33:02,201:Connecting to database...
+ERROR:2022-07-15 12:33:02,209:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 401, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\or\anaconda3\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\or\anaconda3\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\or\anaconda3\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File ".\app.py", line 24, in read_items
+    return "Available range:", next_available_range(cidr)
+  File ".\cidr_manipulator.py", line 50, in next_available_range
+    available_cidr = sub_cidr(cidr, get_cidr_list())
+  File ".\cidr_manipulator.py", line 25, in sub_cidr
+    raw_new_nets = list((ipaddress.ip_network(cidr)).address_exclude(ipaddress.ip_network(cidr_block)))
+  File "c:\users\or\anaconda3\lib\ipaddress.py", line 791, in address_exclude
+    raise ValueError('%s not contained in %s' % (other, self))
+ValueError: 10.0.1.0/24 not contained in 10.0.0.0/24
+INFO:2022-07-15 12:33:30,174:Started server process [46780]
+INFO:2022-07-15 12:33:30,175:Waiting for application startup.
+INFO:2022-07-15 12:33:30,176:Application startup complete.
+INFO:2022-07-15 12:33:30,750:Connecting to database...
+INFO:2022-07-15 12:33:30,783:Connecting to database...
+INFO:2022-07-15 12:33:30,814:Connecting to database...
+INFO:2022-07-15 12:33:30,824:Commiting to database...
+INFO:2022-07-15 12:33:39,763:Started server process [55840]
+INFO:2022-07-15 12:33:39,764:Waiting for application startup.
+INFO:2022-07-15 12:33:39,766:Application startup complete.
+INFO:2022-07-15 12:34:01,261:Connecting to database...
+INFO:2022-07-15 12:36:44,710:Started server process [55912]
+INFO:2022-07-15 12:36:44,710:Waiting for application startup.
+INFO:2022-07-15 12:36:44,711:Application startup complete.
+INFO:2022-07-15 12:36:46,506:Started server process [55400]
+INFO:2022-07-15 12:36:46,507:Waiting for application startup.
+INFO:2022-07-15 12:36:46,507:Application startup complete.
+INFO:2022-07-15 12:38:00,829:Started server process [53120]
+INFO:2022-07-15 12:38:00,830:Waiting for application startup.
+INFO:2022-07-15 12:38:00,831:Application startup complete.
+INFO:2022-07-15 12:38:01,712:Started server process [54592]
+INFO:2022-07-15 12:38:01,713:Waiting for application startup.
+INFO:2022-07-15 12:38:01,713:Application startup complete.
+INFO:2022-07-15 12:38:02,433:Started server process [41264]
+INFO:2022-07-15 12:38:02,434:Waiting for application startup.
+INFO:2022-07-15 12:38:02,434:Application startup complete.
+INFO:2022-07-15 12:39:32,403:Started server process [52588]
+INFO:2022-07-15 12:39:32,404:Waiting for application startup.
+INFO:2022-07-15 12:39:32,404:Application startup complete.
+INFO:2022-07-15 12:39:33,600:Started server process [55260]
+INFO:2022-07-15 12:39:33,601:Waiting for application startup.
+INFO:2022-07-15 12:39:33,601:Application startup complete.
+INFO:2022-07-15 12:39:40,383:Started server process [56144]
+INFO:2022-07-15 12:39:40,384:Waiting for application startup.
+INFO:2022-07-15 12:39:40,385:Application startup complete.
+INFO:2022-07-15 12:45:30,971:Started server process [56060]
+INFO:2022-07-15 12:45:30,972:Waiting for application startup.
+INFO:2022-07-15 12:45:30,972:Application startup complete.
+INFO:2022-07-15 12:45:39,138:Started server process [55688]
+INFO:2022-07-15 12:45:39,138:Waiting for application startup.
+INFO:2022-07-15 12:45:39,139:Application startup complete.
+INFO:2022-07-15 12:45:40,059:Started server process [56132]
+INFO:2022-07-15 12:45:40,059:Waiting for application startup.
+INFO:2022-07-15 12:45:40,060:Application startup complete.
+INFO:2022-07-15 12:45:50,247:Started server process [54648]
+INFO:2022-07-15 12:45:50,248:Waiting for application startup.
+INFO:2022-07-15 12:45:50,248:Application startup complete.
+INFO:2022-07-15 12:45:54,568:Connecting to database...
+INFO:2022-07-15 12:45:54,590:Connecting to database...
+INFO:2022-07-15 12:45:54,609:Connecting to database...
+INFO:2022-07-15 12:45:54,621:Commiting to database...
+INFO:2022-07-15 12:46:14,569:Started server process [41516]
+INFO:2022-07-15 12:46:14,569:Waiting for application startup.
+INFO:2022-07-15 12:46:14,570:Application startup complete.
+INFO:2022-07-15 12:46:16,635:Connecting to database...
+INFO:2022-07-15 12:46:16,655:Connecting to database...
+INFO:2022-07-15 12:46:16,686:Connecting to database...
+INFO:2022-07-15 12:46:19,857:Started server process [54236]
+INFO:2022-07-15 12:46:19,858:Waiting for application startup.
+INFO:2022-07-15 12:46:19,859:Application startup complete.
+INFO:2022-07-15 12:46:22,019:Started server process [53500]
+INFO:2022-07-15 12:46:22,020:Waiting for application startup.
+INFO:2022-07-15 12:46:22,020:Application startup complete.
+INFO:2022-07-15 12:46:27,592:Started server process [52236]
+INFO:2022-07-15 12:46:27,593:Waiting for application startup.
+INFO:2022-07-15 12:46:27,594:Application startup complete.
+INFO:2022-07-15 12:46:29,785:Connecting to database...
+INFO:2022-07-15 12:46:29,803:Connecting to database...
+INFO:2022-07-15 12:46:29,820:Connecting to database...
+INFO:2022-07-15 12:47:04,509:Started server process [55184]
+INFO:2022-07-15 12:47:04,509:Waiting for application startup.
+INFO:2022-07-15 12:47:04,511:Application startup complete.
+INFO:2022-07-15 12:47:06,247:Started server process [56112]
+INFO:2022-07-15 12:47:06,248:Waiting for application startup.
+INFO:2022-07-15 12:47:06,249:Application startup complete.
+INFO:2022-07-15 12:47:07,948:Connecting to database...
+INFO:2022-07-15 12:47:07,978:Connecting to database...
+INFO:2022-07-15 12:47:07,995:Connecting to database...
+INFO:2022-07-15 12:47:08,007:Commiting to database...
+INFO:2022-07-15 12:47:13,429:Started server process [53484]
+INFO:2022-07-15 12:47:13,431:Waiting for application startup.
+INFO:2022-07-15 12:47:13,431:Application startup complete.
+INFO:2022-07-15 12:47:14,026:Connecting to database...
+INFO:2022-07-15 12:47:14,045:Connecting to database...
+INFO:2022-07-15 12:47:14,063:Connecting to database...
+INFO:2022-07-15 12:47:14,073:Commiting to database...
+INFO:2022-07-15 12:47:17,300:Connecting to database...
+INFO:2022-07-15 12:47:17,319:Connecting to database...
+INFO:2022-07-15 12:47:17,337:Connecting to database...
+INFO:2022-07-15 12:47:26,883:Started server process [48860]
+INFO:2022-07-15 12:47:26,884:Waiting for application startup.
+INFO:2022-07-15 12:47:26,884:Application startup complete.
+INFO:2022-07-15 12:47:28,252:Started server process [55280]
+INFO:2022-07-15 12:47:28,252:Waiting for application startup.
+INFO:2022-07-15 12:47:28,253:Application startup complete.
+INFO:2022-07-15 12:47:29,464:Started server process [47176]
+INFO:2022-07-15 12:47:29,465:Waiting for application startup.
+INFO:2022-07-15 12:47:29,465:Application startup complete.
+INFO:2022-07-15 12:47:31,952:Started server process [46772]
+INFO:2022-07-15 12:47:31,962:Waiting for application startup.
+INFO:2022-07-15 12:47:31,963:Application startup complete.
+INFO:2022-07-15 12:47:33,309:Connecting to database...
+INFO:2022-07-15 12:47:33,330:Connecting to database...
+INFO:2022-07-15 12:47:33,346:Connecting to database...
+INFO:2022-07-15 12:47:33,356:Commiting to database...
+INFO:2022-07-15 12:48:10,413:Started server process [53600]
+INFO:2022-07-15 12:48:10,413:Waiting for application startup.
+INFO:2022-07-15 12:48:10,414:Application startup complete.
+INFO:2022-07-15 12:48:11,366:Started server process [54988]
+INFO:2022-07-15 12:48:11,366:Waiting for application startup.
+INFO:2022-07-15 12:48:11,367:Application startup complete.
+INFO:2022-07-15 12:48:14,127:Connecting to database...
+INFO:2022-07-15 12:48:14,161:Connecting to database...
+INFO:2022-07-15 12:48:14,196:Connecting to database...
+INFO:2022-07-15 12:48:29,290:Started server process [48460]
+INFO:2022-07-15 12:48:29,291:Waiting for application startup.
+INFO:2022-07-15 12:48:29,292:Application startup complete.
+INFO:2022-07-15 12:48:31,444:Connecting to database...
+INFO:2022-07-15 12:48:31,530:Connecting to database...
+INFO:2022-07-15 12:48:31,560:Connecting to database...
+INFO:2022-07-15 12:48:31,571:Commiting to database...
+INFO:2022-07-15 12:48:36,281:Started server process [53520]
+INFO:2022-07-15 12:48:36,282:Waiting for application startup.
+INFO:2022-07-15 12:48:36,283:Application startup complete.
+INFO:2022-07-15 12:48:37,087:Connecting to database...
+INFO:2022-07-15 12:48:37,105:Connecting to database...
+INFO:2022-07-15 12:48:37,123:Connecting to database...
+INFO:2022-07-15 12:48:37,133:Commiting to database...
+INFO:2022-07-15 12:48:41,677:Started server process [53260]
+INFO:2022-07-15 12:48:41,682:Waiting for application startup.
+INFO:2022-07-15 12:48:41,684:Application startup complete.
+INFO:2022-07-15 12:48:43,243:Connecting to database...
+INFO:2022-07-15 12:48:43,261:Connecting to database...
+INFO:2022-07-15 12:48:43,277:Connecting to database...
+INFO:2022-07-15 12:48:43,288:Commiting to database...
+INFO:2022-07-15 12:48:52,036:Connecting to database...
+INFO:2022-07-15 12:48:52,055:Connecting to database...
+INFO:2022-07-15 12:48:52,072:Connecting to database...
+INFO:2022-07-15 12:49:36,097:Started server process [37752]
+INFO:2022-07-15 12:49:36,097:Waiting for application startup.
+INFO:2022-07-15 12:49:36,098:Application startup complete.
+INFO:2022-07-15 12:49:40,778:Started server process [55584]
+INFO:2022-07-15 12:49:40,778:Waiting for application startup.
+INFO:2022-07-15 12:49:40,779:Application startup complete.
+INFO:2022-07-15 12:49:47,786:Started server process [52760]
+INFO:2022-07-15 12:49:47,786:Waiting for application startup.
+INFO:2022-07-15 12:49:47,787:Application startup complete.
+INFO:2022-07-15 12:49:53,649:Started server process [54536]
+INFO:2022-07-15 12:49:53,649:Waiting for application startup.
+INFO:2022-07-15 12:49:53,650:Application startup complete.
+INFO:2022-07-15 12:49:55,477:Connecting to database...
+INFO:2022-07-15 12:49:55,528:Connecting to database...
+INFO:2022-07-15 12:49:55,558:Connecting to database...
+INFO:2022-07-15 12:49:55,567:Commiting to database...
+INFO:2022-07-15 12:50:45,589:Started server process [54520]
+INFO:2022-07-15 12:50:45,589:Waiting for application startup.
+INFO:2022-07-15 12:50:45,590:Application startup complete.
+INFO:2022-07-15 12:50:59,760:Started server process [48880]
+INFO:2022-07-15 12:50:59,760:Waiting for application startup.
+INFO:2022-07-15 12:50:59,761:Application startup complete.
+INFO:2022-07-15 12:51:12,583:Started server process [54460]
+INFO:2022-07-15 12:51:12,584:Waiting for application startup.
+INFO:2022-07-15 12:51:12,584:Application startup complete.
+INFO:2022-07-15 12:51:19,247:Connecting to database...
+INFO:2022-07-15 12:51:19,286:Connecting to database...
+INFO:2022-07-15 12:51:19,301:Connecting to database...
+INFO:2022-07-15 12:51:19,310:Commiting to database...
+INFO:2022-07-15 12:51:23,339:Started server process [53648]
+INFO:2022-07-15 12:51:23,340:Waiting for application startup.
+INFO:2022-07-15 12:51:23,341:Application startup complete.
+INFO:2022-07-15 12:51:24,463:Connecting to database...
+INFO:2022-07-15 12:51:24,481:Connecting to database...
+INFO:2022-07-15 12:51:24,497:Connecting to database...
+INFO:2022-07-15 12:51:24,506:Commiting to database...
+INFO:2022-07-15 12:51:32,902:Started server process [43820]
+INFO:2022-07-15 12:51:32,902:Waiting for application startup.
+INFO:2022-07-15 12:51:32,903:Application startup complete.
+INFO:2022-07-15 12:51:33,430:Connecting to database...
+INFO:2022-07-15 12:51:33,452:Connecting to database...
+INFO:2022-07-15 12:51:33,469:Connecting to database...
+INFO:2022-07-15 12:51:33,488:Commiting to database...
+INFO:2022-07-15 12:51:46,853:Started server process [45924]
+INFO:2022-07-15 12:51:46,854:Waiting for application startup.
+INFO:2022-07-15 12:51:46,854:Application startup complete.
+INFO:2022-07-15 12:51:51,812:Started server process [43368]
+INFO:2022-07-15 12:51:51,813:Waiting for application startup.
+INFO:2022-07-15 12:51:51,814:Application startup complete.
+INFO:2022-07-15 12:52:00,985:Started server process [22908]
+INFO:2022-07-15 12:52:00,986:Waiting for application startup.
+INFO:2022-07-15 12:52:00,987:Application startup complete.
+INFO:2022-07-15 12:52:01,437:Connecting to database...
+INFO:2022-07-15 12:52:01,466:Connecting to database...
+INFO:2022-07-15 12:52:01,484:Connecting to database...
+INFO:2022-07-15 12:52:01,494:Commiting to database...
+INFO:2022-07-15 12:52:04,984:Started server process [53932]
+INFO:2022-07-15 12:52:04,985:Waiting for application startup.
+INFO:2022-07-15 12:52:04,985:Application startup complete.
+INFO:2022-07-15 12:52:05,788:Connecting to database...
+INFO:2022-07-15 12:52:05,807:Connecting to database...
+INFO:2022-07-15 12:52:05,825:Connecting to database...
+INFO:2022-07-15 12:52:05,835:Commiting to database...
+INFO:2022-07-15 12:52:21,826:Started server process [55320]
+INFO:2022-07-15 12:52:21,827:Waiting for application startup.
+INFO:2022-07-15 12:52:21,827:Application startup complete.
+INFO:2022-07-15 12:52:23,188:Started server process [55640]
+INFO:2022-07-15 12:52:23,189:Waiting for application startup.
+INFO:2022-07-15 12:52:23,189:Application startup complete.
+INFO:2022-07-15 12:52:27,773:Connecting to database...
+INFO:2022-07-15 12:52:27,807:Connecting to database...
+INFO:2022-07-15 12:52:27,824:Connecting to database...
+INFO:2022-07-15 12:52:27,834:Commiting to database...
+INFO:2022-07-15 12:52:27,860:Connecting to database...
+INFO:2022-07-15 12:52:27,893:Connecting to database...
+INFO:2022-07-15 12:52:27,921:Connecting to database...
+INFO:2022-07-15 12:52:27,932:Commiting to database...
+INFO:2022-07-15 12:52:27,948:Connecting to database...
+INFO:2022-07-15 12:52:27,976:Connecting to database...
+INFO:2022-07-15 12:52:27,995:Connecting to database...
+INFO:2022-07-15 12:52:28,004:Commiting to database...
+INFO:2022-07-15 12:55:07,098:Started server process [40372]
+INFO:2022-07-15 12:55:07,099:Waiting for application startup.
+INFO:2022-07-15 12:55:07,099:Application startup complete.
+INFO:2022-07-15 12:55:08,347:Started server process [30088]
+INFO:2022-07-15 12:55:08,347:Waiting for application startup.
+INFO:2022-07-15 12:55:08,348:Application startup complete.
+INFO:2022-07-15 12:55:09,544:Started server process [54980]
+INFO:2022-07-15 12:55:09,545:Waiting for application startup.
+INFO:2022-07-15 12:55:09,545:Application startup complete.
+INFO:2022-07-15 12:55:14,586:Started server process [45508]
+INFO:2022-07-15 12:55:14,587:Waiting for application startup.
+INFO:2022-07-15 12:55:14,587:Application startup complete.
+INFO:2022-07-15 12:55:22,653:Connecting to database...
+INFO:2022-07-15 12:55:22,692:Connecting to database...
+INFO:2022-07-15 12:55:22,711:Connecting to database...
+INFO:2022-07-15 12:55:22,720:Commiting to database...
+INFO:2022-07-15 12:55:22,736:Connecting to database...
+INFO:2022-07-15 12:55:51,552:Started server process [39288]
+INFO:2022-07-15 12:55:51,553:Waiting for application startup.
+INFO:2022-07-15 12:55:51,553:Application startup complete.
+INFO:2022-07-15 12:55:52,579:Started server process [48496]
+INFO:2022-07-15 12:55:52,580:Waiting for application startup.
+INFO:2022-07-15 12:55:52,580:Application startup complete.
+INFO:2022-07-15 12:55:55,535:Started server process [53820]
+INFO:2022-07-15 12:55:55,536:Waiting for application startup.
+INFO:2022-07-15 12:55:55,537:Application startup complete.
+INFO:2022-07-15 12:55:56,594:Started server process [46124]
+INFO:2022-07-15 12:55:56,595:Waiting for application startup.
+INFO:2022-07-15 12:55:56,596:Application startup complete.
+INFO:2022-07-15 12:56:15,754:Started server process [42468]
+INFO:2022-07-15 12:56:15,755:Waiting for application startup.
+INFO:2022-07-15 12:56:15,755:Application startup complete.
+INFO:2022-07-15 12:56:22,303:Started server process [32672]
+INFO:2022-07-15 12:56:22,303:Waiting for application startup.
+INFO:2022-07-15 12:56:22,304:Application startup complete.
+INFO:2022-07-15 12:56:24,545:Started server process [43412]
+INFO:2022-07-15 12:56:24,546:Waiting for application startup.
+INFO:2022-07-15 12:56:24,546:Application startup complete.
+INFO:2022-07-15 12:56:29,814:Connecting to database...
+INFO:2022-07-15 12:56:29,863:Connecting to database...
+INFO:2022-07-15 12:56:29,879:Connecting to database...
+INFO:2022-07-15 12:56:29,890:Commiting to database...
+INFO:2022-07-15 12:56:29,905:Connecting to database...
+INFO:2022-07-15 12:56:29,927:Connecting to database...
+INFO:2022-07-15 12:56:29,961:Connecting to database...
+INFO:2022-07-15 12:56:29,985:Commiting to database...
+INFO:2022-07-15 12:56:30,003:Connecting to database...
+INFO:2022-07-15 12:56:30,032:Connecting to database...
+INFO:2022-07-15 12:56:30,049:Connecting to database...
+INFO:2022-07-15 12:56:30,094:Commiting to database...
+INFO:2022-07-15 12:57:03,709:Started server process [51832]
+INFO:2022-07-15 12:57:03,722:Waiting for application startup.
+INFO:2022-07-15 12:57:03,771:Application startup complete.
+INFO:2022-07-15 12:57:04,956:Connecting to database...
+INFO:2022-07-15 12:57:23,663:Started server process [56188]
+INFO:2022-07-15 12:57:23,664:Waiting for application startup.
+INFO:2022-07-15 12:57:23,664:Application startup complete.
+INFO:2022-07-15 12:57:25,269:Started server process [55420]
+INFO:2022-07-15 12:57:25,270:Waiting for application startup.
+INFO:2022-07-15 12:57:25,270:Application startup complete.
+INFO:2022-07-15 12:57:25,869:Connecting to database...
+INFO:2022-07-15 12:57:30,916:Started server process [53572]
+INFO:2022-07-15 12:57:30,916:Waiting for application startup.
+INFO:2022-07-15 12:57:30,917:Application startup complete.
+INFO:2022-07-15 12:57:31,163:Connecting to database...
+INFO:2022-07-15 12:57:33,980:Started server process [48540]
+INFO:2022-07-15 12:57:33,981:Waiting for application startup.
+INFO:2022-07-15 12:57:33,982:Application startup complete.
+INFO:2022-07-15 12:57:37,914:Connecting to database...
+INFO:2022-07-15 12:57:37,950:Connecting to database...
+INFO:2022-07-15 12:57:37,966:Connecting to database...
+INFO:2022-07-15 12:57:37,978:Commiting to database...
+INFO:2022-07-15 12:57:37,994:Connecting to database...
+INFO:2022-07-15 12:57:38,018:Connecting to database...
+INFO:2022-07-15 12:57:38,066:Connecting to database...
+INFO:2022-07-15 12:57:38,088:Commiting to database...
+INFO:2022-07-15 12:57:38,103:Connecting to database...
+INFO:2022-07-15 12:57:38,124:Connecting to database...
+INFO:2022-07-15 12:57:38,143:Connecting to database...
+INFO:2022-07-15 12:57:38,155:Commiting to database...
+INFO:2022-07-15 12:58:06,815:Started server process [50236]
+INFO:2022-07-15 12:58:06,816:Waiting for application startup.
+INFO:2022-07-15 12:58:06,816:Application startup complete.
+INFO:2022-07-15 12:58:08,914:Started server process [50436]
+INFO:2022-07-15 12:58:08,915:Waiting for application startup.
+INFO:2022-07-15 12:58:08,915:Application startup complete.
+INFO:2022-07-15 12:58:11,100:Started server process [55396]
+INFO:2022-07-15 12:58:11,101:Waiting for application startup.
+INFO:2022-07-15 12:58:11,102:Application startup complete.
+INFO:2022-07-15 12:58:12,190:Connecting to database...
+INFO:2022-07-15 12:58:18,604:Connecting to database...
+INFO:2022-07-15 12:58:18,633:Connecting to database...
+INFO:2022-07-15 12:58:18,650:Connecting to database...
+INFO:2022-07-15 12:58:18,659:Commiting to database...
+INFO:2022-07-15 12:58:18,677:Connecting to database...
+INFO:2022-07-15 12:58:18,701:Connecting to database...
+INFO:2022-07-15 12:58:18,758:Connecting to database...
+INFO:2022-07-15 12:58:18,772:Commiting to database...
+INFO:2022-07-15 12:58:18,788:Connecting to database...
+INFO:2022-07-15 12:58:18,813:Connecting to database...
+INFO:2022-07-15 12:58:18,831:Connecting to database...
+INFO:2022-07-15 12:58:18,851:Commiting to database...
+INFO:2022-07-15 13:00:40,755:Started server process [26348]
+INFO:2022-07-15 13:00:40,756:Waiting for application startup.
+INFO:2022-07-15 13:00:40,757:Application startup complete.
+INFO:2022-07-15 13:00:42,157:Connecting to database...
+INFO:2022-07-15 13:00:42,179:Connecting to database...
+INFO:2022-07-15 13:00:42,200:Connecting to database...
+INFO:2022-07-15 13:00:42,225:Connecting to database...
+INFO:2022-07-15 13:00:42,246:Connecting to database...
+INFO:2022-07-15 13:00:42,305:Connecting to database...
+INFO:2022-07-15 13:00:42,351:Connecting to database...
+INFO:2022-07-15 13:00:42,378:Connecting to database...
+INFO:2022-07-15 13:00:42,397:Connecting to database...
+INFO:2022-07-15 13:00:48,779:Connecting to database...
+INFO:2022-07-15 13:00:48,818:Connecting to database...
+INFO:2022-07-15 13:00:48,838:Connecting to database...
+INFO:2022-07-15 13:00:48,859:Connecting to database...
+INFO:2022-07-15 13:00:48,882:Connecting to database...
+INFO:2022-07-15 13:00:48,911:Connecting to database...
+INFO:2022-07-15 13:00:48,953:Connecting to database...
+INFO:2022-07-15 13:00:48,975:Connecting to database...
+INFO:2022-07-15 13:00:49,001:Connecting to database...
+INFO:2022-07-15 13:01:14,254:Started server process [54764]
+INFO:2022-07-15 13:01:14,254:Waiting for application startup.
+INFO:2022-07-15 13:01:14,255:Application startup complete.
+INFO:2022-07-15 13:01:16,423:Started server process [52268]
+INFO:2022-07-15 13:01:16,424:Waiting for application startup.
+INFO:2022-07-15 13:01:16,424:Application startup complete.
+INFO:2022-07-15 13:01:17,142:Connecting to database...
+INFO:2022-07-15 13:01:17,164:Connecting to database...
+INFO:2022-07-15 13:01:17,185:Connecting to database...
+INFO:2022-07-15 13:01:17,211:Connecting to database...
+INFO:2022-07-15 13:01:17,234:Connecting to database...
+INFO:2022-07-15 13:01:17,254:Connecting to database...
+INFO:2022-07-15 13:01:17,306:Connecting to database...
+INFO:2022-07-15 13:01:17,332:Connecting to database...
+INFO:2022-07-15 13:01:17,350:Connecting to database...
+INFO:2022-07-15 13:01:32,759:Connecting to database...
+INFO:2022-07-15 13:01:32,791:Connecting to database...
+INFO:2022-07-15 13:01:32,807:Connecting to database...
+INFO:2022-07-15 13:01:32,818:Commiting to database...
+INFO:2022-07-15 13:01:32,856:Connecting to database...
+INFO:2022-07-15 13:01:32,899:Connecting to database...
+INFO:2022-07-15 13:01:32,929:Connecting to database...
+INFO:2022-07-15 13:01:32,947:Commiting to database...
+INFO:2022-07-15 13:01:32,961:Connecting to database...
+INFO:2022-07-15 13:01:32,985:Connecting to database...
+INFO:2022-07-15 13:01:33,004:Connecting to database...
+INFO:2022-07-15 13:01:33,018:Commiting to database...
+INFO:2022-07-15 13:01:46,558:Started server process [55244]
+INFO:2022-07-15 13:01:46,558:Waiting for application startup.
+INFO:2022-07-15 13:01:46,559:Application startup complete.
+INFO:2022-07-15 13:01:47,551:Started server process [42932]
+INFO:2022-07-15 13:01:47,551:Waiting for application startup.
+INFO:2022-07-15 13:01:47,552:Application startup complete.
+INFO:2022-07-15 13:01:48,980:Connecting to database...
+INFO:2022-07-15 13:01:49,001:Connecting to database...
+INFO:2022-07-15 13:01:49,018:Connecting to database...
+INFO:2022-07-15 13:01:49,040:Connecting to database...
+INFO:2022-07-15 13:01:49,061:Connecting to database...
+INFO:2022-07-15 13:01:49,080:Connecting to database...
+INFO:2022-07-15 13:01:49,100:Connecting to database...
+INFO:2022-07-15 13:01:49,120:Connecting to database...
+INFO:2022-07-15 13:01:49,151:Connecting to database...
+INFO:2022-07-15 13:01:57,924:Connecting to database...
+INFO:2022-07-15 13:01:57,943:Connecting to database...
+INFO:2022-07-15 13:01:57,983:Connecting to database...
+INFO:2022-07-15 13:01:58,005:Connecting to database...
+INFO:2022-07-15 13:01:58,026:Connecting to database...
+INFO:2022-07-15 13:01:58,060:Connecting to database...
+INFO:2022-07-15 13:01:58,089:Connecting to database...
+INFO:2022-07-15 13:01:58,109:Connecting to database...
+INFO:2022-07-15 13:01:58,133:Connecting to database...
+INFO:2022-07-15 13:03:19,258:Started server process [47116]
+INFO:2022-07-15 13:03:19,259:Waiting for application startup.
+INFO:2022-07-15 13:03:19,260:Application startup complete.
+INFO:2022-07-15 13:03:22,052:Connecting to database...
+INFO:2022-07-15 13:03:22,081:Connecting to database...
+INFO:2022-07-15 13:03:22,099:Connecting to database...
+INFO:2022-07-15 13:03:22,120:Connecting to database...
+INFO:2022-07-15 13:03:22,158:Connecting to database...
+INFO:2022-07-15 13:03:22,191:Connecting to database...
+INFO:2022-07-15 13:03:22,212:Connecting to database...
+INFO:2022-07-15 13:03:22,238:Connecting to database...
+INFO:2022-07-15 13:03:22,259:Connecting to database...
+INFO:2022-07-15 13:03:31,327:Started server process [55408]
+INFO:2022-07-15 13:03:31,328:Waiting for application startup.
+INFO:2022-07-15 13:03:31,330:Application startup complete.
+INFO:2022-07-15 13:03:31,883:Connecting to database...
+INFO:2022-07-15 13:03:31,902:Connecting to database...
+INFO:2022-07-15 13:03:31,918:Connecting to database...
+INFO:2022-07-15 13:03:32,769:Connecting to database...
+INFO:2022-07-15 13:03:32,788:Connecting to database...
+INFO:2022-07-15 13:03:32,823:Connecting to database...
+INFO:2022-07-15 13:03:41,482:Connecting to database...
+INFO:2022-07-15 13:03:41,500:Connecting to database...
+INFO:2022-07-15 13:03:41,518:Connecting to database...
+INFO:2022-07-15 13:04:00,393:Started server process [54392]
+INFO:2022-07-15 13:04:00,394:Waiting for application startup.
+INFO:2022-07-15 13:04:00,397:Application startup complete.
+INFO:2022-07-15 13:04:00,790:Connecting to database...
+INFO:2022-07-15 13:04:00,810:Connecting to database...
+INFO:2022-07-15 13:04:00,850:Connecting to database...
+INFO:2022-07-15 13:04:04,167:Connecting to database...
+INFO:2022-07-15 13:04:04,228:Connecting to database...
+INFO:2022-07-15 13:04:04,244:Connecting to database...
+INFO:2022-07-15 13:04:05,292:Connecting to database...
+INFO:2022-07-15 13:04:05,312:Connecting to database...
+INFO:2022-07-15 13:04:05,333:Connecting to database...
+INFO:2022-07-15 13:04:30,076:Started server process [15656]
+INFO:2022-07-15 13:04:30,077:Waiting for application startup.
+INFO:2022-07-15 13:04:30,078:Application startup complete.
+INFO:2022-07-15 13:04:30,457:Connecting to database...
+INFO:2022-07-15 13:04:30,477:Connecting to database...
+INFO:2022-07-15 13:04:30,505:Connecting to database...
+INFO:2022-07-15 13:04:57,479:Started server process [47728]
+INFO:2022-07-15 13:04:57,484:Waiting for application startup.
+INFO:2022-07-15 13:04:57,493:Application startup complete.
+INFO:2022-07-15 13:04:57,585:Connecting to database...
+INFO:2022-07-15 13:04:57,606:Connecting to database...
+INFO:2022-07-15 13:04:57,627:Connecting to database...
+INFO:2022-07-15 13:05:19,164:Started server process [47564]
+INFO:2022-07-15 13:05:19,165:Waiting for application startup.
+INFO:2022-07-15 13:05:19,166:Application startup complete.
+INFO:2022-07-15 13:05:26,961:Started server process [55304]
+INFO:2022-07-15 13:05:26,962:Waiting for application startup.
+INFO:2022-07-15 13:05:26,962:Application startup complete.
+INFO:2022-07-15 13:05:27,250:Connecting to database...
+INFO:2022-07-15 13:05:27,270:Connecting to database...
+INFO:2022-07-15 13:05:27,289:Connecting to database...
+INFO:2022-07-15 13:05:44,138:Started server process [48152]
+INFO:2022-07-15 13:05:44,139:Waiting for application startup.
+INFO:2022-07-15 13:05:44,140:Application startup complete.
+INFO:2022-07-15 13:05:44,267:Connecting to database...
+INFO:2022-07-15 13:05:44,288:Connecting to database...
+INFO:2022-07-15 13:05:44,308:Connecting to database...
+INFO:2022-07-15 13:06:00,805:Started server process [56128]
+INFO:2022-07-15 13:06:00,805:Waiting for application startup.
+INFO:2022-07-15 13:06:00,806:Application startup complete.
+INFO:2022-07-15 13:06:01,368:Connecting to database...
+INFO:2022-07-15 13:06:01,390:Connecting to database...
+INFO:2022-07-15 13:06:01,410:Connecting to database...
+INFO:2022-07-15 13:06:12,591:Connecting to database...
+INFO:2022-07-15 13:06:12,651:Connecting to database...
+INFO:2022-07-15 13:06:12,678:Connecting to database...
+INFO:2022-07-15 13:06:12,696:Commiting to database...
+INFO:2022-07-15 13:06:14,579:Connecting to database...
+INFO:2022-07-15 13:06:14,600:Connecting to database...
+INFO:2022-07-15 13:06:14,626:Connecting to database...
+INFO:2022-07-15 13:06:21,700:Started server process [53476]
+INFO:2022-07-15 13:06:21,700:Waiting for application startup.
+INFO:2022-07-15 13:06:21,701:Application startup complete.
+INFO:2022-07-15 13:06:21,861:Connecting to database...
+INFO:2022-07-15 13:06:21,881:Connecting to database...
+INFO:2022-07-15 13:06:21,903:Connecting to database...
+INFO:2022-07-15 13:06:21,915:Commiting to database...
+INFO:2022-07-15 13:06:35,469:Connecting to database...
+INFO:2022-07-15 13:06:35,503:Connecting to database...
+INFO:2022-07-15 13:06:35,538:Connecting to database...
+INFO:2022-07-15 13:06:35,578:Commiting to database...
+INFO:2022-07-15 13:06:39,613:Started server process [45628]
+INFO:2022-07-15 13:06:39,616:Waiting for application startup.
+INFO:2022-07-15 13:06:39,616:Application startup complete.
+INFO:2022-07-15 13:06:40,103:Connecting to database...
+INFO:2022-07-15 13:06:40,123:Connecting to database...
+INFO:2022-07-15 13:06:40,146:Connecting to database...
+INFO:2022-07-15 13:06:40,158:Commiting to database...
+INFO:2022-07-15 13:07:29,496:Started server process [54160]
+INFO:2022-07-15 13:07:29,496:Waiting for application startup.
+INFO:2022-07-15 13:07:29,497:Application startup complete.
+INFO:2022-07-15 13:08:09,746:Started server process [56256]
+INFO:2022-07-15 13:08:09,747:Waiting for application startup.
+INFO:2022-07-15 13:08:09,747:Application startup complete.
+INFO:2022-07-15 13:08:40,732:Started server process [48472]
+INFO:2022-07-15 13:08:40,733:Waiting for application startup.
+INFO:2022-07-15 13:08:40,733:Application startup complete.
+INFO:2022-07-15 13:08:43,524:Connecting to database...
+INFO:2022-07-15 13:08:55,934:Started server process [54712]
+INFO:2022-07-15 13:08:55,935:Waiting for application startup.
+INFO:2022-07-15 13:08:55,935:Application startup complete.
+INFO:2022-07-15 13:09:01,967:Started server process [55560]
+INFO:2022-07-15 13:09:01,968:Waiting for application startup.
+INFO:2022-07-15 13:09:01,969:Application startup complete.
+INFO:2022-07-15 13:09:02,728:Connecting to database...
+INFO:2022-07-15 13:09:12,825:Started server process [55588]
+INFO:2022-07-15 13:09:12,826:Waiting for application startup.
+INFO:2022-07-15 13:09:12,826:Application startup complete.
+INFO:2022-07-15 13:09:13,075:Connecting to database...
+INFO:2022-07-15 13:09:19,567:Started server process [53280]
+INFO:2022-07-15 13:09:19,568:Waiting for application startup.
+INFO:2022-07-15 13:09:19,568:Application startup complete.
+INFO:2022-07-15 13:09:24,085:Started server process [47780]
+INFO:2022-07-15 13:09:24,087:Waiting for application startup.
+INFO:2022-07-15 13:09:24,087:Application startup complete.
+INFO:2022-07-15 13:09:25,260:Connecting to database...
+INFO:2022-07-15 13:09:25,279:Connecting to database...
+INFO:2022-07-15 13:09:25,298:Connecting to database...
+INFO:2022-07-15 13:09:33,207:Connecting to database...
+INFO:2022-07-15 13:09:33,250:Connecting to database...
+INFO:2022-07-15 13:09:33,270:Connecting to database...
+INFO:2022-07-15 13:09:33,310:Commiting to database...
+INFO:2022-07-15 13:09:39,776:Connecting to database...
+INFO:2022-07-15 13:09:39,797:Connecting to database...
+INFO:2022-07-15 13:09:39,817:Connecting to database...
+INFO:2022-07-15 13:09:45,126:Started server process [50540]
+INFO:2022-07-15 13:09:45,127:Waiting for application startup.
+INFO:2022-07-15 13:09:45,128:Application startup complete.
+INFO:2022-07-15 13:09:48,550:Connecting to database...
+INFO:2022-07-15 13:09:48,571:Connecting to database...
+INFO:2022-07-15 13:09:48,590:Connecting to database...
+INFO:2022-07-15 13:09:48,607:Commiting to database...
+INFO:2022-07-15 13:09:49,686:Connecting to database...
+INFO:2022-07-15 13:09:49,706:Connecting to database...
+INFO:2022-07-15 13:09:49,726:Connecting to database...
+INFO:2022-07-15 13:09:59,772:Started server process [52568]
+INFO:2022-07-15 13:09:59,774:Waiting for application startup.
+INFO:2022-07-15 13:09:59,775:Application startup complete.
+INFO:2022-07-15 13:10:02,766:Connecting to database...
+INFO:2022-07-15 13:10:02,787:Connecting to database...
+INFO:2022-07-15 13:10:02,808:Connecting to database...
+INFO:2022-07-15 13:10:02,828:Commiting to database...
+INFO:2022-07-15 13:10:11,638:Connecting to database...
+INFO:2022-07-15 13:10:11,682:Connecting to database...
+INFO:2022-07-15 13:10:11,714:Connecting to database...
+INFO:2022-07-15 13:11:16,344:Started server process [52572]
+INFO:2022-07-15 13:11:16,345:Waiting for application startup.
+INFO:2022-07-15 13:11:16,345:Application startup complete.
+INFO:2022-07-15 13:11:19,663:Started server process [47448]
+INFO:2022-07-15 13:11:19,664:Waiting for application startup.
+INFO:2022-07-15 13:11:19,665:Application startup complete.
+INFO:2022-07-15 13:11:30,934:Started server process [52556]
+INFO:2022-07-15 13:11:30,934:Waiting for application startup.
+INFO:2022-07-15 13:11:30,935:Application startup complete.
+INFO:2022-07-15 13:11:32,132:Connecting to database...
+INFO:2022-07-15 13:11:32,187:Connecting to database...
+INFO:2022-07-15 13:11:32,205:Connecting to database...
+INFO:2022-07-15 13:11:32,215:Commiting to database...
+INFO:2022-07-15 13:11:34,338:Connecting to database...
+INFO:2022-07-15 13:11:34,358:Connecting to database...
+INFO:2022-07-15 13:11:34,376:Connecting to database...
+INFO:2022-07-15 13:11:38,240:Started server process [53788]
+INFO:2022-07-15 13:11:38,245:Waiting for application startup.
+INFO:2022-07-15 13:11:38,245:Application startup complete.
+INFO:2022-07-15 13:11:38,909:Connecting to database...
+INFO:2022-07-15 13:11:38,929:Connecting to database...
+INFO:2022-07-15 13:11:38,947:Connecting to database...
+INFO:2022-07-15 13:11:38,958:Commiting to database...
+INFO:2022-07-15 13:11:40,741:Connecting to database...
+INFO:2022-07-15 13:11:40,759:Connecting to database...
+INFO:2022-07-15 13:11:40,788:Connecting to database...
+INFO:2022-07-15 13:11:48,243:Started server process [55708]
+INFO:2022-07-15 13:11:48,244:Waiting for application startup.
+INFO:2022-07-15 13:11:48,244:Application startup complete.
+INFO:2022-07-15 13:11:48,829:Connecting to database...
+INFO:2022-07-15 13:11:48,849:Connecting to database...
+INFO:2022-07-15 13:11:48,866:Connecting to database...
+INFO:2022-07-15 13:11:48,876:Commiting to database...
+INFO:2022-07-15 13:12:27,118:Started server process [55480]
+INFO:2022-07-15 13:12:27,118:Waiting for application startup.
+INFO:2022-07-15 13:12:27,119:Application startup complete.
+INFO:2022-07-15 13:12:28,529:Started server process [56028]
+INFO:2022-07-15 13:12:28,529:Waiting for application startup.
+INFO:2022-07-15 13:12:28,530:Application startup complete.
+INFO:2022-07-15 13:12:30,228:Started server process [52616]
+INFO:2022-07-15 13:12:30,228:Waiting for application startup.
+INFO:2022-07-15 13:12:30,229:Application startup complete.
+INFO:2022-07-15 13:12:37,907:Started server process [55540]
+INFO:2022-07-15 13:12:37,931:Waiting for application startup.
+INFO:2022-07-15 13:12:37,933:Application startup complete.
+INFO:2022-07-15 13:12:49,137:Started server process [56048]
+INFO:2022-07-15 13:12:49,138:Waiting for application startup.
+INFO:2022-07-15 13:12:49,139:Application startup complete.
+INFO:2022-07-15 13:12:49,759:Connecting to database...
+INFO:2022-07-15 13:12:49,807:Connecting to database...
+INFO:2022-07-15 13:12:49,825:Connecting to database...
+INFO:2022-07-15 13:12:49,834:Commiting to database...
+INFO:2022-07-15 13:13:23,211:Started server process [39968]
+INFO:2022-07-15 13:13:23,211:Waiting for application startup.
+INFO:2022-07-15 13:13:23,212:Application startup complete.
+INFO:2022-07-15 13:13:23,818:Connecting to database...
+INFO:2022-07-15 13:13:23,856:Connecting to database...
+INFO:2022-07-15 13:13:23,873:Connecting to database...
+INFO:2022-07-15 13:13:23,882:Commiting to database...
+INFO:2022-07-15 13:15:22,586:Connecting to database...
+INFO:2022-07-15 13:15:22,619:Connecting to database...
+INFO:2022-07-15 13:15:22,637:Connecting to database...
+INFO:2022-07-15 13:15:43,704:Started server process [41024]
+INFO:2022-07-15 13:15:43,705:Waiting for application startup.
+INFO:2022-07-15 13:15:43,705:Application startup complete.
+INFO:2022-07-15 13:15:45,247:Connecting to database...
+INFO:2022-07-15 13:15:45,266:Connecting to database...
+INFO:2022-07-15 13:15:45,284:Connecting to database...
+INFO:2022-07-15 13:16:06,605:Started server process [50804]
+INFO:2022-07-15 13:16:06,607:Waiting for application startup.
+INFO:2022-07-15 13:16:06,607:Application startup complete.
+INFO:2022-07-15 13:16:08,552:Connecting to database...
+INFO:2022-07-15 13:16:08,570:Connecting to database...
+INFO:2022-07-15 13:16:08,587:Connecting to database...
+INFO:2022-07-15 13:16:17,093:Started server process [53664]
+INFO:2022-07-15 13:16:17,094:Waiting for application startup.
+INFO:2022-07-15 13:16:17,094:Application startup complete.
+INFO:2022-07-15 13:16:17,400:Connecting to database...
+INFO:2022-07-15 13:16:17,419:Connecting to database...
+INFO:2022-07-15 13:16:17,436:Connecting to database...
+INFO:2022-07-15 13:16:33,977:Started server process [55700]
+INFO:2022-07-15 13:16:33,980:Waiting for application startup.
+INFO:2022-07-15 13:16:33,980:Application startup complete.
+INFO:2022-07-15 13:16:35,527:Started server process [15804]
+INFO:2022-07-15 13:16:35,527:Waiting for application startup.
+INFO:2022-07-15 13:16:35,528:Application startup complete.
+INFO:2022-07-15 13:16:37,119:Started server process [44612]
+INFO:2022-07-15 13:16:37,121:Waiting for application startup.
+INFO:2022-07-15 13:16:37,122:Application startup complete.
+INFO:2022-07-15 13:16:59,719:Started server process [55820]
+INFO:2022-07-15 13:16:59,720:Waiting for application startup.
+INFO:2022-07-15 13:16:59,720:Application startup complete.
+INFO:2022-07-15 13:17:01,968:Started server process [55208]
+INFO:2022-07-15 13:17:01,968:Waiting for application startup.
+INFO:2022-07-15 13:17:01,969:Application startup complete.
+INFO:2022-07-15 13:17:02,977:Connecting to database...
+INFO:2022-07-15 13:17:03,039:Connecting to database...
+INFO:2022-07-15 13:17:03,073:Connecting to database...
+INFO:2022-07-15 13:17:03,083:Commiting to database...
+INFO:2022-07-15 13:17:09,682:Started server process [54000]
+INFO:2022-07-15 13:17:09,684:Waiting for application startup.
+INFO:2022-07-15 13:17:09,685:Application startup complete.
+INFO:2022-07-15 13:17:13,660:Connecting to database...
+INFO:2022-07-15 13:17:13,691:Connecting to database...
+INFO:2022-07-15 13:17:13,729:Connecting to database...
+INFO:2022-07-15 13:17:13,739:Commiting to database...
+INFO:2022-07-15 13:17:15,495:Connecting to database...
+INFO:2022-07-15 13:17:15,514:Connecting to database...
+INFO:2022-07-15 13:17:15,531:Connecting to database...
+INFO:2022-07-15 13:17:25,285:Started server process [5812]
+INFO:2022-07-15 13:17:25,297:Waiting for application startup.
+INFO:2022-07-15 13:17:25,298:Application startup complete.
+INFO:2022-07-15 13:17:26,159:Connecting to database...
+INFO:2022-07-15 13:17:26,179:Connecting to database...
+INFO:2022-07-15 13:17:26,204:Connecting to database...
+INFO:2022-07-15 13:17:30,632:Started server process [53464]
+INFO:2022-07-15 13:17:30,632:Waiting for application startup.
+INFO:2022-07-15 13:17:30,633:Application startup complete.
+INFO:2022-07-15 13:17:31,960:Connecting to database...
+INFO:2022-07-15 13:17:31,979:Connecting to database...
+INFO:2022-07-15 13:17:31,997:Connecting to database...
+INFO:2022-07-15 13:17:39,262:Started server process [52888]
+INFO:2022-07-15 13:17:39,262:Waiting for application startup.
+INFO:2022-07-15 13:17:39,263:Application startup complete.
+INFO:2022-07-15 13:17:40,513:Started server process [52808]
+INFO:2022-07-15 13:17:40,514:Waiting for application startup.
+INFO:2022-07-15 13:17:40,514:Application startup complete.
+INFO:2022-07-15 13:17:43,586:Connecting to database...
+INFO:2022-07-15 13:17:43,628:Connecting to database...
+INFO:2022-07-15 13:17:43,644:Connecting to database...
+INFO:2022-07-15 13:17:43,657:Commiting to database...
+INFO:2022-07-15 13:17:45,659:Connecting to database...
+INFO:2022-07-15 13:17:45,676:Connecting to database...
+INFO:2022-07-15 13:17:45,692:Connecting to database...
+INFO:2022-07-15 13:18:04,122:Started server process [43436]
+INFO:2022-07-15 13:18:04,123:Waiting for application startup.
+INFO:2022-07-15 13:18:04,124:Application startup complete.
+INFO:2022-07-15 13:18:13,564:Connecting to database...
+INFO:2022-07-15 13:18:13,595:Connecting to database...
+INFO:2022-07-15 13:18:13,612:Connecting to database...
+INFO:2022-07-15 13:18:13,622:Commiting to database...
+INFO:2022-07-15 13:18:15,294:Connecting to database...
+INFO:2022-07-15 13:18:15,312:Connecting to database...
+INFO:2022-07-15 13:18:15,339:Connecting to database...
+INFO:2022-07-15 13:18:19,208:Started server process [15016]
+INFO:2022-07-15 13:18:19,211:Waiting for application startup.
+INFO:2022-07-15 13:18:19,212:Application startup complete.
+INFO:2022-07-15 13:18:19,629:Connecting to database...
+INFO:2022-07-15 13:18:19,648:Connecting to database...
+INFO:2022-07-15 13:18:19,665:Connecting to database...
+INFO:2022-07-15 13:18:19,676:Commiting to database...
+INFO:2022-07-15 13:18:22,634:Connecting to database...
+INFO:2022-07-15 13:18:22,654:Connecting to database...
+INFO:2022-07-15 13:18:22,693:Connecting to database...
+INFO:2022-07-15 13:18:28,050:Started server process [40468]
+INFO:2022-07-15 13:18:28,051:Waiting for application startup.
+INFO:2022-07-15 13:18:28,052:Application startup complete.
+INFO:2022-07-15 13:18:29,710:Connecting to database...
+INFO:2022-07-15 13:18:29,733:Connecting to database...
+INFO:2022-07-15 13:18:29,749:Connecting to database...
+INFO:2022-07-15 13:18:29,757:Commiting to database...
